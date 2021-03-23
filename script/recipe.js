@@ -1,21 +1,21 @@
 'use strict';
 
-const getRecipes = function () {
-    fetch('../data/db.json')
+const getRecipes = function() {
+    fetch('GroupRecipeProject/data/db.json')
         .then(response => response.json())
-            .then(data => listRecipes(data.recipes))
+        .then(data => listRecipes(data.recipes))
 }
 
 
 getRecipes();
 
-function listRecipes (recipes) {
+function listRecipes(recipes) {
 
     recipes.forEach(recipe => {
         const recipeContainer = document.querySelector('.container');
 
-        let result = 
-        `<section class="recipe"> 
+        let result =
+            `<section class="recipe"> 
             <div class="recipe-header">
                 <h2 class="recipe-title">${recipe.title}</h2>
                 <div class="recipe-img">
@@ -35,7 +35,7 @@ function listRecipes (recipes) {
         `;
 
         recipeContainer.insertAdjacentHTML('beforeend', result);
-   
+
     });
 }
 
@@ -47,4 +47,3 @@ function listRecipes (recipes) {
 //     };
 //     ingList.innerHTML = result;
 // }
-
