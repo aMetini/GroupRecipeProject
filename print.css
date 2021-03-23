@@ -1,0 +1,38 @@
+body {
+    color: #000;
+    background-color: #fff;
+}
+
+header,
+footer,
+.footer-container,
+aside,
+nav,
+form,
+iframe,
+.menu,
+.hero,
+.adslot {
+    display: none;
+}
+
+.container {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    align-items: center;
+}
+
+.recipe {
+    margin-top: auto;
+    margin-bottom: auto;
+    break-inside: avoid;
+}
+
+table,
+img,
+svg {
+    break-inside: avoid;
+}

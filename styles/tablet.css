@@ -1,0 +1,12 @@
+/* Recipes */
+.container {
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+    margin-left: 10%;
+    width: 80%;
+}
+  
+.recipe-header {
+    font-size: x-large;
+    padding-top: 10px;
+}

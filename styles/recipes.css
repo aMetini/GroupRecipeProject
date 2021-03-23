@@ -1,0 +1,67 @@
+main {
+  background: url("../img/wood-BG.jpg") no-repeat center center/cover;
+  width: 100%;
+}
+
+.container {
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+  margin-left: 25%;
+  width: 50%;
+}
+
+.recipe {
+  border: solid 5px var(--navbar-color);
+  background-color: var(--primary-color);
+  opacity: 0.9;
+  margin-top: 4rem;
+}
+
+.recipe-header {
+  font-size: xx-large;
+  background-color: var(--navbar-color);
+  text-align: center;
+  padding-top: 15px;
+}
+
+.recipe-img img{
+  width: 99%;
+}
+
+.ingredients,
+.instructions,
+.nutrition {
+  padding-left: 30px;
+  margin: 20px;
+}
+
+.nutrition {
+  padding-bottom: 20px;
+}
+.subtitle {
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+ol,
+ul {
+  list-style-position: inside;
+}
+
+ol li {
+  padding-top: 10px;
+}
+
+.table-detail {
+  border-bottom: solid 1px var(--secondary-color);
+  padding-top: 10px;
+}
+
+table :first-child {
+  padding-top: 0px;
+}
+
+td + td {
+  text-align: right;
+}

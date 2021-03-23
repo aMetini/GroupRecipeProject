@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Manjari";
+}
+
+main p {
+  padding: 10px;
+}
+
+body {
+  height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--navbar-color);
+  color: var(--primary-color);
+  width: 100%;
+  height: 10vh;
+  position: fixed;
+  top: 0px;
+  padding: 0 2rem;
+  z-index: 1;
+}
+
+.navbar ul a:hover,
+.active {
+  border-bottom: solid 2px var(--primary-color);
+}
+
+.navbar a {
+  color: var(--primary-color);
+  padding: 0.8rem 0.5rem;
+  margin: 0 0.4rem;
+  text-decoration: none;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.hero-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #a09e9e;
+  opacity: 0.2;
+}
+
+.hero-image {
+  background: url(../img/landing.jfif) no-repeat center center/cover;
+  height: 90vh;
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.landing-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  padding: 0 1.4rem;
+  color: var(--secondary-color);
+  font-size: 2.5rem;
+}
+
+.landing-info h2,
+.landing-info h3 {
+  font-family: "Tangerine", serif;
+  padding: 10px 0px;
+}
+
+.landing-info p {
+  font-size: 1.2rem;
+  padding: 10px 0px;
+}
+
+.landing-info h2 {
+  font-size: 8rem;
+  text-shadow: 6px 6px 6px #aaa;
+}
+
+.footer {
+  display: grid;
+  background: var(--secondary-color);
+  width: 100%;
+  height: 10vh;
+  justify-content: center;
+}
+
+.footer-container {
+  text-align: center;
+  padding: 0.8rem;
+  font-size: 1rem;
+  color: var(--primary-color);
+  background: rgb(68, 68, 68, 0.4);
+  margin: 1rem;
+}
