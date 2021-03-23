@@ -1,7 +1,7 @@
 'use strict';
 
 const getRecipes = function () {
-    fetch('data/db.json')
+    fetch('db.json')
         .then(response => response.json())
             .then(data => listRecipes(data.recipes))
 }
